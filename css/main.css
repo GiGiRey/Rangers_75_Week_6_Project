@@ -1,0 +1,53 @@
+/*Nav Styles */
+.ct-nav{
+    display: flex;
+    justify-content: end;
+}
+
+/* Target Main Logo Image */
+.ct-nav img{
+    width: 25%;
+    max-width: 100%;
+    margin-left: 2vw;
+}
+
+ul#horizontal-list{
+    min-width: 696px;
+    list-style: none;
+    padding-top: 20px;
+}
+
+ul#horizontal-list li, ul#horizontal-list a{
+    display:inline;
+    text-decoration:none;
+    padding: 0.5vw;
+    color: black;
+}
+
+/* End of Nav Styles */
+/* RESET DEFAULT BROWSER STYLES */
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    color: #333;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+/* Profile Styles */
+.hero-section{
+    height: 95vh;
+    background-image:url(../images/Untitled_design.jpg);
+    background-size: cover;
+  
+}

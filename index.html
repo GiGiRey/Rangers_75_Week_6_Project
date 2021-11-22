@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="css/main.css"> 
+<!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+<!-- Be sure to add defer to the script line -->
+<script src="js/main.js" defer></script>
+<title>Weather API</title>
+
+</head>
+<body>
+ 
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand">
+          <h3 class="text-white" >Enter a City to see the Current Weather</h3>
+        </a>
+        <form class="d-flex"id="weatherDataForm">
+          <input class="form-control me-2" type="text" name ="city" id="city" placeholder="Enter City">
+          <button class="btn btn-warning" type="submit" id="submitButton" onclick="load_data()">Go!</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-section">
+      
+    <div class="container">
+      
+      
+      <section class="vh-100" >
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-10 col-lg-8 col-xl-6">
+      
+              <div class="card bg-black text-white" style="border-radius: 75px;">
+                <div class="bg-image" style="border-radius: 35px;">
+                  <img
+                    src="../project/images/Untitled_design.jpg"
+                    class="card-img"
+                    alt="weather"
+                  />
+                  <div class="mask" style="background-color: black"></div>
+                </div>
+                <div class="card-img-overlay text-warning p-5">
+                  <div class="row">
+         
+                    <h1 class="mb-0" id="Name"></h1>
+                    <p class="display-2 my-3" id="Temp"></p>
+                    <h2 id="Desc"></h2>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </section>       
+  </header>
+
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
